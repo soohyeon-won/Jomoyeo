@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/dontTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="37dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/timeback"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/monday"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dayofweek"
+                        android:gravity="center"
+                        android:text="월"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tuseday"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dayofweek"
+                        android:gravity="center"
+                        android:text="화"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/wednesday"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dayofweek"
+                        android:gravity="center"
+                        android:text="수"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/thursday"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dayofweek"
+                        android:gravity="center"
+                        android:text="목"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/friday"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dayofweek"
+                        android:gravity="center"
+                        android:text="금"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/saturday"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dayofweek"
+                        android:gravity="center"
+                        android:text="토"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/sunday"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dayofweek"
+                        android:gravity="center"
+                        android:text="일"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="395dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time0"
+                                android:layout_width="37dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/timeback"
+                                android:text="9:00"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/s00"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s01"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s02"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s03"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s04"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s05"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s06"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time1"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:gravity="center"
+                                android:text="10:00"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/s10"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s11"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s12"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s13"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s14"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s15"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s16"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time2"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="11:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s20"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s21"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s22"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s23"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s24"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s25"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s26"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time3"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="12:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s30"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s31"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s32"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s33"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s34"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s35"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s36"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time4"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="13:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s40"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s41"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s42"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s43"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s44"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s45"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s46"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time5"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="14:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s50"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s51"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s52"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s53"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s54"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s55"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s56"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time6"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="15:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s60"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s61"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s62"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s63"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s64"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s65"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s66"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time7"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="16:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s70"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s71"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s72"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s73"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s74"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s75"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s76"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time8"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="17:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s80"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s81"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s82"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s83"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s84"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s85"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s86"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time9"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="18:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s90"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s91"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s92"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s93"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s94"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s95"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s96"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/time10"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="19:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s100"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s101"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s102"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s103"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s104"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s105"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s106"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/time11"
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/timeback"
+                                android:text="20:00"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/s110"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s111"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s112"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s113"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s114"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s115"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/s116"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/schedule_back"
+                                android:clickable="true"
+                                android:onClick="scheduleClick"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dayofweek"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="추가하기"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/removeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dayofweek"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="삭제하기"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
