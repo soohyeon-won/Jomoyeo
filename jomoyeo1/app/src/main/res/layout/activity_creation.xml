@@ -13,29 +13,29 @@
 
 
         <EditText
-            android:id="@+id/romNameEditText"
+            android:id="@+id/roomNameEditText"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit"
             android:ems="10"
+            android:hint="방 제목"
             android:inputType="textPersonName"
-            android:paddingStart="20dp"
-            android:text="방 제목" />
+            android:paddingStart="20dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/roomPwdEditText"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit"
             android:ems="10"
+            android:hint="방 비밀번호"
             android:inputType="textPersonName"
-            android:paddingStart="20dp"
-            android:text="방 비밀번호" />
+            android:paddingStart="20dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/createButton"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:background="@drawable/draw_btn"

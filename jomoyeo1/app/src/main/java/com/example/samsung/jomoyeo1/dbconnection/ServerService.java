@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class ServerService {
     private String log = "Log - "+this.getClass().getSimpleName()+"";
-    private final String basicDomain ="http://172.30.1.30:8080";
+    private final String basicDomain ="http://192.168.123.102:8080";
     public Context mContext;
 
     public ServerService(Context context) {
@@ -15,6 +15,28 @@ public class ServerService {
     }
 
     AsyncTaskActivity asyncTaskActivity = new AsyncTaskActivity();
+
+    /* 방 생성 */
+    public HttpRequestResult createRoom(String id, String roomName, String roomPwd){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
+
+        basic.put("url",basicDomain+"/create_room_api.do?");
+        basic.put("method", "PUT");
+
+        params.put("id",id);
+        params.put("room_name", roomName);
+        params.put("room_pwd", roomPwd);
+
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
+    }
 
     /* 스케쥴 불러오기 */
     public HttpRequestResult selectSchedule(String id){
