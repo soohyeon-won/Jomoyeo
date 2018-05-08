@@ -38,6 +38,9 @@ public class ScheduleMatrix {
     HttpRequestResult requestResult;
     JSONArray jsonArray;                     //저장된 스케쥴 불러올 jsonArray
 
+    ColorPalette colorPalette;
+    String color;
+
     /* 생성자 */
     public ScheduleMatrix(Context mContext){
         this.mContext = mContext;
@@ -45,6 +48,7 @@ public class ScheduleMatrix {
         listXY = new ArrayList<String>();
         initialFlag = false;
         id = UserPreference.getInstance().getId(mContext);
+        colorPalette = new ColorPalette();
     }
 
     /* textVIew로 구성된 2차원 배열 null값으로 초기화 */
@@ -80,10 +84,11 @@ public class ScheduleMatrix {
                     String title = jsonObject.getString("schedule_title");
                     int x = Integer.parseInt(jsonObject.getString("x"));
                     int y = Integer.parseInt(jsonObject.getString("y"));
-
+                    String currColor = jsonObject.getString("color");
                     /* setText and colorChange */
                     (scheduleTextView[x][y]).setText(title);
-                    (scheduleTextView[x][y]).setBackgroundColor(255);
+                    (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor(currColor));
+
                 }
             }
             catch(Exception e){
@@ -93,7 +98,8 @@ public class ScheduleMatrix {
     }
 
     /* 시간표에서 시간을 선택했을때 x,y 좌표를 받아옴 */
-    public void scheduleClickHelper(View view){
+    public void scheduleClickHelper(View view , String color){
+        this.color = color;
         if(initialFlag)
             for (int i = 0; i < scheduleTextView.length; i++) {
                 for (int j = 0; j < scheduleTextView[i].length; j++) {
@@ -194,14 +200,13 @@ public class ScheduleMatrix {
             xyArr = xy.split(",");
             String x = xyArr[0];
             String y = xyArr[1];
-            requestResult = serverService.insertSchedule(id, title, x, y);
+            requestResult = serverService.insertSchedule(id, title, x, y, color);
         }
     }
 
     /* color로 색 변경 */
     public void changeScheduleColor(View view){
-        int color = Color.argb(255,255,255,255);
-        view.setBackgroundColor(color);
+        view.setBackgroundColor(Color.parseColor(color));
     }
 
     /* drawble로 변경 */

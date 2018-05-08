@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class ServerService {
     private String log = "Log - "+this.getClass().getSimpleName()+"";
-    private final String basicDomain ="http://192.168.123.102:8080";
+    private final String basicDomain ="http://192.168.0.107:8080";
     public Context mContext;
 
     public ServerService(Context context) {
@@ -15,6 +15,146 @@ public class ServerService {
     }
 
     AsyncTaskActivity asyncTaskActivity = new AsyncTaskActivity();
+
+    /* 방장인지 확인 */
+public HttpRequestResult isMasterUser(String room_name, String attend_id){
+    HttpRequestResult requestResult = null;
+    HashMap<String,String> basic = new HashMap<>();
+    HashMap<String,String> params = new HashMap<>();
+
+    basic.put("url",basicDomain+"/is_master_user_api.do?");
+    basic.put("method", "GET");
+    params.put("room_name", room_name);
+    params.put("attend_id", attend_id);
+
+    try {
+        requestResult = asyncTaskActivity.execute(basic,params).get();
+    }
+    catch (Exception e){
+        e.printStackTrace();
+    }
+    return requestResult;
+}
+
+/* 방 참여 인원 불러오기 */
+public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
+    HttpRequestResult requestResult = null;
+    HashMap<String,String> basic = new HashMap<>();
+    HashMap<String,String> params = new HashMap<>();
+
+    basic.put("url",basicDomain+"/delete_attend_user_api.do?");
+    basic.put("method", "PUT");
+    params.put("room_name", room_name);
+    params.put("attend_id", attend_id);
+
+    try {
+        requestResult = asyncTaskActivity.execute(basic,params).get();
+    }
+    catch (Exception e){
+        e.printStackTrace();
+    }
+    return requestResult;
+}
+
+    /* 방 참여 인원 불러오기 */
+    public HttpRequestResult getAttendUser(String room_name){
+          HttpRequestResult requestResult = null;
+          HashMap<String,String> basic = new HashMap<>();
+          HashMap<String,String> params = new HashMap<>();
+
+          basic.put("url",basicDomain+"/get_attend_user_api.do?");
+          basic.put("method", "GET");
+          params.put("room_name", room_name);
+
+    try {
+        requestResult = asyncTaskActivity.execute(basic,params).get();
+    }
+    catch (Exception e){
+        e.printStackTrace();
+    }
+    return requestResult;
+}
+
+    /* 방 참여 인원 검사 */
+    public HttpRequestResult isAttendUser(String room_name, String attend_id){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
+
+        basic.put("url",basicDomain+"/is_attend_user_api.do?");
+        basic.put("method", "GET");
+        params.put("room_name", room_name);
+        params.put("attend_id", attend_id);
+
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
+    }
+
+    /* 방 참여 인원 등록 */
+    public HttpRequestResult insertAttendUser(String room_name, String attend_id, String attend_master){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
+
+        basic.put("url",basicDomain+"/insert_attend_user_api.do?");
+        basic.put("method", "PUT");
+        params.put("room_name", room_name);
+        params.put("attend_id", attend_id);
+        params.put("attend_master", attend_master);
+
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
+    }
+
+    /* 방 제목 중복 검사 */
+    public HttpRequestResult roomNameCheck(String roomName){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
+
+        basic.put("url",basicDomain+"/room_name_check_api.do?");
+        basic.put("method", "GET");
+        params.put("room_name", roomName);
+
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
+    }
+
+
+    /* 방 목록 불러오기 */
+    public HttpRequestResult selectRoomList(){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
+
+        basic.put("url",basicDomain+"/room_view_api.do?");
+        basic.put("method", "GET");
+
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+            //json으로 list가 들어가야함.
+            Log.d("출력",requestResult.toString());
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
+    }
 
     /* 방 생성 */
     public HttpRequestResult createRoom(String id, String roomName, String roomPwd){
@@ -80,7 +220,7 @@ public class ServerService {
     }
 
     /* 스케쥴 추가 */
-    public HttpRequestResult insertSchedule(String id, String scheduleTitle, String x, String y){
+    public HttpRequestResult insertSchedule(String id, String scheduleTitle, String x, String y, String color){
         HttpRequestResult requestResult = null;
         HashMap<String,String> basic = new HashMap<>();
         HashMap<String,String> params = new HashMap<>();
@@ -89,9 +229,10 @@ public class ServerService {
         basic.put("method", "PUT");
 
         params.put("id",id);
-        params.put("scheduleTitle",scheduleTitle);
+        params.put("schedule_title",scheduleTitle);
         params.put("x",x+"");
         params.put("y",y+"");
+        params.put("color", color);
 
         try {
             requestResult = asyncTaskActivity.execute(basic,params).get();

@@ -30,6 +30,11 @@
         <activity android:name=".room.CreationActivity"></activity>
         <activity android:name=".room.SearchActivity"></activity>
         <activity android:name=".main.ScheduleActivity"> </activity>
+        <activity android:name=".room.RoomViewActivity"> </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
     </application>
 

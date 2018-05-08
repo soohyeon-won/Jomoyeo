@@ -25,13 +25,13 @@
             android:textAlignment="center">
 
             <EditText
-                android:id="@+id/scheduleTitle"
+                android:id="@+id/popPasswordTextView"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
                 android:ems="10"
-                android:hint="제목"
+                android:hint="비밀번호"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp" />
 
@@ -52,12 +52,12 @@
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/popAddButton"
+                android:id="@+id/popAttendButton"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@drawable/dayofweek"
-                android:text="추가"
+                android:text="참여"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 

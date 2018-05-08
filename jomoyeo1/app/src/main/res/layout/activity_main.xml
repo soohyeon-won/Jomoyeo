@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dayofweek"
+    android:background="#896AB7"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -13,9 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="Jomoyeo"
+        android:text="JOMOYEO"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="60dp" />
 
@@ -41,8 +42,8 @@
             android:gravity="center"
             android:onClick="goRoom"
             android:text="참가한 방"
-            android:textColor="#000000"
-            android:textSize="14sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/scheduleRegistration"
@@ -52,7 +53,8 @@
             android:background="@drawable/menu"
             android:onClick="goRoom"
             android:text="스케쥴 등록"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/listRoom"
@@ -62,7 +64,8 @@
             android:background="@drawable/menu"
             android:onClick="goRoom"
             android:text="방 목록"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/creationRoom"
@@ -72,7 +75,8 @@
             android:background="@drawable/menu"
             android:onClick="goRoom"
             android:text="방 생성"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/logoutButton"
@@ -85,7 +89,8 @@
             android:includeFontPadding="false"
             android:onClick="goRoom"
             android:text="로그 아웃"
-            android:textColor="#000000" />
+            android:textColor="#393939"
+            android:textSize="16sp" />
 
     </LinearLayout>
 

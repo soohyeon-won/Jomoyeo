@@ -39,6 +39,9 @@ public class ScheduleActivity extends Activity {
 
     boolean addDelete = true;
 
+    ColorPalette colorPalette;
+    String color;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,7 @@ public class ScheduleActivity extends Activity {
 
         //textView 저장 되어 있는 배열 생성
         scheduleMatrix.makeScheduleArray();
+        colorPalette = new ColorPalette();
 
     }
 
@@ -70,7 +74,7 @@ public class ScheduleActivity extends Activity {
     /* textView 눌렀을때 수행 */
     public void scheduleClick(View view){
         if(addDelete == true) {
-            scheduleMatrix.scheduleClickHelper(view);
+            scheduleMatrix.scheduleClickHelper(view, color);
         }
         else{
             scheduleMatrix.removeClickHelper(view);
@@ -98,6 +102,7 @@ public class ScheduleActivity extends Activity {
                     Toast.makeText(getApplicationContext(), "제목을 입력해주세요.", Toast.LENGTH_LONG).show();
             }
             else{
+                color = colorPalette.randomColor();
                 dismissDialog();
                 addPopupWindow_v2();
             }
@@ -138,6 +143,7 @@ public class ScheduleActivity extends Activity {
             public void onClick(View v) {
                 scheduleMatrix.scheduleAdd(scheduleTitle);  //스케줄 제목 셋팅
                 String id = UserPreference.getInstance().getId(mContext);
+                Log.d("출력1", scheduleTitle);
                 scheduleMatrix.scheduleAddDB(id, scheduleTitle);
                 dismissDialog();
             }

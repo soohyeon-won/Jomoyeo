@@ -29,7 +29,7 @@
                         android:id="@+id/time"
                         android:layout_width="37dp"
                         android:layout_height="match_parent"
-                        android:background="@drawable/timeback"
+                        android:background="@drawable/schedule_white"
                         android:textAlignment="center"
                         android:textSize="12sp" />
 
@@ -37,78 +37,78 @@
                         android:id="@+id/monday"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dayofweek"
+                        android:background="@drawable/schedule_white"
                         android:gravity="center"
                         android:text="월"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:textColor="#BDBDBD"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/tuseday"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dayofweek"
+                        android:background="@drawable/schedule_white"
                         android:gravity="center"
                         android:text="화"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:textColor="#BDBDBD"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/wednesday"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dayofweek"
+                        android:background="@drawable/schedule_white"
                         android:gravity="center"
                         android:text="수"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:textColor="#BDBDBD"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/thursday"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dayofweek"
+                        android:background="@drawable/schedule_white"
                         android:gravity="center"
                         android:text="목"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:textColor="#BDBDBD"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/friday"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dayofweek"
+                        android:background="@drawable/schedule_white"
                         android:gravity="center"
                         android:text="금"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:textColor="#BDBDBD"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/saturday"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dayofweek"
+                        android:background="@drawable/schedule_white"
                         android:gravity="center"
                         android:text="토"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:textColor="#BDBDBD"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/sunday"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dayofweek"
+                        android:background="@drawable/schedule_white"
                         android:gravity="center"
                         android:text="일"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:textColor="#BDBDBD"
+                        android:textSize="18sp" />
                 </TableRow>
 
 
@@ -136,10 +136,10 @@
                                 android:layout_width="37dp"
                                 android:layout_height="50dp"
                                 android:background="@drawable/timeback"
+                                android:gravity="center"
                                 android:text="9:00"
                                 android:textAlignment="center"
-                                android:gravity="center"
-                                android:textColor="#FFFFFF"
+                                android:textColor="#BDBDBD"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -148,8 +148,11 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
+                                android:text="SSS"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -158,8 +161,10 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -168,8 +173,10 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -178,8 +185,10 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -188,8 +197,10 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -198,8 +209,10 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -208,8 +221,10 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -225,7 +240,7 @@
                                 android:gravity="center"
                                 android:text="10:00"
                                 android:textAlignment="center"
-                                android:textColor="#FFFFFF"
+                                android:textColor="#BDBDBD"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -234,8 +249,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -244,8 +261,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -254,8 +273,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -264,8 +285,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -274,8 +297,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -284,8 +309,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -294,8 +321,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -312,7 +341,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s20"
@@ -320,8 +349,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -330,8 +361,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -340,8 +373,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -350,8 +385,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -360,8 +397,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -370,8 +409,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -380,8 +421,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -398,7 +441,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s30"
@@ -406,8 +449,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -416,8 +461,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -426,8 +473,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -436,8 +485,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -446,8 +497,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -456,8 +509,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -466,8 +521,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -484,7 +541,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s40"
@@ -492,8 +549,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -502,8 +561,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -512,8 +573,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -522,8 +585,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -532,8 +597,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -542,8 +609,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -552,8 +621,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -570,7 +641,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s50"
@@ -578,8 +649,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -588,8 +661,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -598,8 +673,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -608,8 +685,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -618,8 +697,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -628,8 +709,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -638,8 +721,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -656,7 +741,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s60"
@@ -664,8 +749,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -674,8 +761,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -684,8 +773,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -694,8 +785,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -704,8 +797,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -714,8 +809,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -724,8 +821,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -742,7 +841,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s70"
@@ -750,8 +849,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -760,8 +861,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -770,8 +873,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -780,8 +885,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -790,8 +897,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -800,8 +909,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -810,8 +921,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -828,7 +941,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s80"
@@ -836,8 +949,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -846,8 +961,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -856,8 +973,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -866,8 +985,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -876,8 +997,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -886,8 +1009,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -896,8 +1021,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -914,7 +1041,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s90"
@@ -922,8 +1049,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -932,8 +1061,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -942,8 +1073,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -952,8 +1085,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -962,8 +1097,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -972,8 +1109,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -982,8 +1121,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -1000,7 +1141,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s100"
@@ -1008,8 +1149,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1018,8 +1161,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1028,8 +1173,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1038,8 +1185,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1048,8 +1197,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1058,8 +1209,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1068,8 +1221,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -1084,7 +1239,7 @@
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 android:gravity="center"
-                                android:textColor="#FFFFFF"/>
+                                android:textColor="#BDBDBD"/>
 
                             <TextView
                                 android:id="@+id/s110"
@@ -1092,8 +1247,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1102,8 +1259,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1112,8 +1271,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1122,8 +1283,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1132,8 +1295,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1142,8 +1307,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -1152,8 +1319,10 @@
                                 android:layout_height="50dp"
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
+                                android:gravity="center"
                                 android:onClick="scheduleClick"
                                 android:textAlignment="center"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
                         </TableRow>
 
@@ -1185,8 +1354,9 @@
                 android:background="@drawable/dayofweek"
                 android:gravity="center"
                 android:onClick="onClick"
-                android:text="추가하기"
-                android:textColor="#FFFFFF" />
+                android:text="추가"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/removeButton"
@@ -1197,7 +1367,8 @@
                 android:gravity="center"
                 android:onClick="onClick"
                 android:text="삭제하기"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </LinearLayout>

@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/dayofweek"
+        android:background="#896AB7"
         android:gravity="center"
         android:orientation="vertical">
 

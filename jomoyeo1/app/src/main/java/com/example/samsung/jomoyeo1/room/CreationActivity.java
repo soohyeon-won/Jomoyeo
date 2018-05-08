@@ -48,18 +48,39 @@ public class CreationActivity extends Activity {
                 roomName = roomNameEditText.getText().toString();
                 roomPwd = roomPwdEditText.getText().toString();
 
-                ServerService serverService = new ServerService(mContext);
-                requestResult = serverService.createRoom(id, roomName, roomPwd);
+                if(roomName.equals("")){
+                    Toast.makeText(mContext, "방 제목을 입력해주세요.", Toast.LENGTH_SHORT).show();
+                }
+                else if(roomPwd.equals("")){
+                    Toast.makeText(mContext, "방 비밀번호를 입력해주세요.", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    //방제목 중복 검사
+                    boolean roomNameDuplicate = false;
+                    ServerService duplicateService = new ServerService(mContext);
+                    requestResult = duplicateService.roomNameCheck(roomName);
+                    if(requestResult.getResultCode()==200){
+                        roomNameDuplicate = true;
+                    }
+                    else{
+                        Toast.makeText(mContext, "중복된 방 제목입니다.", Toast.LENGTH_LONG).show();
+                    }
+                    //중복 검사 통과 후
+                    if(roomNameDuplicate==true) {
+                        ServerService serverService = new ServerService(mContext);
+                        requestResult = serverService.createRoom(id, roomName, roomPwd);
 
-                if(requestResult.getResultCode() != 200){   // insert 못함.
-                    Toast.makeText(mContext, "방 생성", Toast.LENGTH_LONG);
+                        //방을 생성한다.
+                        if (requestResult.getResultCode() == 200) {
+                            ServerService insertUser = new ServerService(mContext);
+                            requestResult = insertUser.insertAttendUser(roomName, id, "1");  //master는 1로 저장.
+                            Toast.makeText(mContext, "방 생성", Toast.LENGTH_LONG);
+                            Intent Intent = new Intent(mContext, SearchActivity.class);
+                            startActivity(Intent);
+                            finish();
+                        }
+                    }
                 }
-                else{
-                    Toast.makeText(mContext, "이미 존재하는 방 제목입니다.", Toast.LENGTH_LONG);
-                }
-                Intent Intent = new Intent(mContext, SearchActivity.class);
-                startActivity(Intent);
-                finish();
             }
         });
     }
