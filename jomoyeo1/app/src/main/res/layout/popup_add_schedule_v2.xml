@@ -10,7 +10,7 @@
         android:id="@+id/popup_element2"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:background="#CCFFFFFF"
+        android:background="#FFFFFF"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,6 +43,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/dayofweek"
+                android:gravity="center"
                 android:text="추가"
                 android:textColor="#FFFFFF" />
 
@@ -52,6 +53,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/dayofweek"
+                android:gravity="center"
                 android:text="취소"
                 android:textColor="#FFFFFF" />
 

@@ -151,8 +151,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
-                                android:text="SSS"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -164,7 +163,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -176,7 +175,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -188,7 +187,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -200,7 +199,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -212,7 +211,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -224,7 +223,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -252,7 +251,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -264,7 +263,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -276,7 +275,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -288,7 +287,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -300,7 +299,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -312,7 +311,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -324,7 +323,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -352,7 +351,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -364,7 +363,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -376,7 +375,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -388,7 +387,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -400,7 +399,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -412,7 +411,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -424,7 +423,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -452,7 +451,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -464,7 +463,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -476,7 +475,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -488,7 +487,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -500,7 +499,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -512,7 +511,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -524,7 +523,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -552,7 +551,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -564,7 +563,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -576,7 +575,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -588,7 +587,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -600,7 +599,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -612,7 +611,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -624,7 +623,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -652,7 +651,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -664,7 +663,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -676,7 +675,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -688,7 +687,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -700,7 +699,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -712,7 +711,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -724,7 +723,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -752,7 +751,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -764,7 +763,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -776,7 +775,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -788,7 +787,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -800,7 +799,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -812,7 +811,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -824,7 +823,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -852,7 +851,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -864,7 +863,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -876,7 +875,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -888,7 +887,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -900,7 +899,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -912,7 +911,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -924,7 +923,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -952,7 +951,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -964,7 +963,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -976,7 +975,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -988,7 +987,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1000,7 +999,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1012,7 +1011,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1024,7 +1023,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1052,7 +1051,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1064,7 +1063,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1076,7 +1075,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1088,7 +1087,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1100,7 +1099,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1112,7 +1111,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1124,7 +1123,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1152,7 +1151,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1164,7 +1163,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1176,7 +1175,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1188,7 +1187,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1200,7 +1199,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1212,7 +1211,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1224,7 +1223,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1250,7 +1249,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1262,7 +1261,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1274,7 +1273,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1286,7 +1285,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1298,7 +1297,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1310,7 +1309,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1322,7 +1321,7 @@
                                 android:background="@drawable/schedule_back"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:onClick="scheduleClick"
+                                android:onClick="getTvUserList"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
@@ -1333,46 +1332,5 @@
             </ScrollView>
         </LinearLayout>
     </HorizontalScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_weight="1"
-        android:background="#00000000"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#00000000"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/addButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:theme="@style/popupButton"
-                android:gravity="center"
-                android:onClick="onClick"
-                android:text="추가"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/removeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:theme="@style/popupButton"
-                android:gravity="center"
-                android:onClick="onClick"
-                android:text="삭제하기"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-    </LinearLayout>
 
 </LinearLayout>

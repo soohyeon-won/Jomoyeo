@@ -16,25 +16,65 @@ public class ServerService {
 
     AsyncTaskActivity asyncTaskActivity = new AsyncTaskActivity();
 
-    /* 방장인지 확인 */
-public HttpRequestResult isMasterUser(String room_name, String attend_id){
-    HttpRequestResult requestResult = null;
-    HashMap<String,String> basic = new HashMap<>();
-    HashMap<String,String> params = new HashMap<>();
+    /* 참여한 방 목록 불러오기 */
+    public HttpRequestResult selectAttendRoomList(String attend_id){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
 
-    basic.put("url",basicDomain+"/is_master_user_api.do?");
-    basic.put("method", "GET");
-    params.put("room_name", room_name);
-    params.put("attend_id", attend_id);
+        basic.put("url",basicDomain+"/attend_room_list_api.do?");
+        basic.put("method", "GET");
+        params.put("attend_id", attend_id);
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+            //json으로 list가 들어가야함.
+            Log.d("출력",requestResult.toString());
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
+    }
 
-    try {
-        requestResult = asyncTaskActivity.execute(basic,params).get();
+    /* 방장 탈퇴시 방에 있는 모든 유저 탈퇴 시킴. */
+    public HttpRequestResult deleteAllUser(String room_name){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
+
+        basic.put("url",basicDomain+"/delete_room_alluser_api.do?");
+        basic.put("method", "GET");
+        params.put("room_name", room_name);
+
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
     }
-    catch (Exception e){
-        e.printStackTrace();
+
+    /* 방 삭제 */
+    public HttpRequestResult deleteRoom(String room_name, String id){
+        HttpRequestResult requestResult = null;
+        HashMap<String,String> basic = new HashMap<>();
+        HashMap<String,String> params = new HashMap<>();
+
+        basic.put("url",basicDomain+"/delete_room_api.do?");
+        basic.put("method", "GET");
+        params.put("room_name", room_name);
+        params.put("id", id);
+
+        try {
+            requestResult = asyncTaskActivity.execute(basic,params).get();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return requestResult;
     }
-    return requestResult;
-}
+
 
 /* 방 참여 인원 불러오기 */
 public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
@@ -96,7 +136,7 @@ public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
     }
 
     /* 방 참여 인원 등록 */
-    public HttpRequestResult insertAttendUser(String room_name, String attend_id, String attend_master){
+    public HttpRequestResult insertAttendUser(String room_name, String attend_id, String attend_master, String masterId){
         HttpRequestResult requestResult = null;
         HashMap<String,String> basic = new HashMap<>();
         HashMap<String,String> params = new HashMap<>();
@@ -106,6 +146,7 @@ public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
         params.put("room_name", room_name);
         params.put("attend_id", attend_id);
         params.put("attend_master", attend_master);
+        params.put("master_id", masterId);
 
         try {
             requestResult = asyncTaskActivity.execute(basic,params).get();
@@ -180,7 +221,7 @@ public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
 
     /* 스케쥴 불러오기 */
     public HttpRequestResult selectSchedule(String id){
-        HttpRequestResult requestResult = null;
+            HttpRequestResult requestResult = null;
         HashMap<String,String> basic = new HashMap<>();
         HashMap<String,String> params = new HashMap<>();
 
@@ -284,7 +325,7 @@ public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
         return requestResult;
     }
 
-    public HttpRequestResult joinMemberInfo(String id, String pwd, String addr, String tel){
+    public HttpRequestResult joinMemberInfo(String id, String pwd){
         HttpRequestResult requestResult = null;
         HashMap<String,String> basic = new HashMap<>();
         HashMap<String,String> params = new HashMap<>();
@@ -294,8 +335,6 @@ public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
 
         params.put("id",id);
         params.put("pwd",pwd);
-        params.put("addr",addr);
-        params.put("tel",tel);
 
         try {
             requestResult = asyncTaskActivity.execute(basic,params).get();

@@ -28,7 +28,7 @@ public class ScheduleMatrix {
     private String id;
     final static int x = 12;                //행
     final static int y = 7;                 //열
-    private TextView[][] scheduleTextView; //시간표
+    public TextView[][] scheduleTextView; //시간표
     private ArrayList<String> listXY;       //스케쥴 list
     private String singleXY;                //스케쥴 String
 
@@ -41,6 +41,9 @@ public class ScheduleMatrix {
     ColorPalette colorPalette;
     String color;
 
+    int viewCount=1;
+    ArrayList<String> tvUser;
+
     /* 생성자 */
     public ScheduleMatrix(Context mContext){
         this.mContext = mContext;
@@ -49,6 +52,7 @@ public class ScheduleMatrix {
         initialFlag = false;
         id = UserPreference.getInstance().getId(mContext);
         colorPalette = new ColorPalette();
+        tvUser = new ArrayList<String>();
     }
 
     /* textVIew로 구성된 2차원 배열 null값으로 초기화 */
@@ -71,6 +75,15 @@ public class ScheduleMatrix {
         existentScheduleArray();
     }
 
+    public void makeCombineScheduleArray(){
+        for(int i=0; i<scheduleTextView.length; i++){
+            for(int j=0; j<scheduleTextView[i].length; j++){
+                int tvId = mContext.getResources().getIdentifier("s"+(i)+""+(j),"id",mContext.getPackageName());
+                scheduleTextView[i][j] = ((Activity)mContext).findViewById(tvId);
+            }
+        }
+    }
+
     /* DB에 저장된 스케쥴 목록 불러오기 */
     public void existentScheduleArray(){
         ServerService serverService = new ServerService(mContext);
@@ -88,13 +101,57 @@ public class ScheduleMatrix {
                     /* setText and colorChange */
                     (scheduleTextView[x][y]).setText(title);
                     (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor(currColor));
-
                 }
             }
             catch(Exception e){
                 e.printStackTrace();
             }
         }
+    }
+
+    public void combineSchedule(String id){
+        ServerService combine = new ServerService(mContext);
+        //DB에 존재하는지 검사
+        requestResult = combine.selectSchedule(id);
+        if(requestResult.getResultCode() == 200){
+            try {
+                jsonArray = (JSONArray) requestResult.getResultJsonArray();
+                for(int i = 0 ; i <jsonArray.length(); i++) {
+                    JSONObject jsonObject = jsonArray.getJSONObject(i);
+                    String title = jsonObject.getString("schedule_title");
+                    int x = Integer.parseInt(jsonObject.getString("x"));
+                    int y = Integer.parseInt(jsonObject.getString("y"));
+                    String currColor = jsonObject.getString("color");
+                    tvUser.add(x+"#"+y+"#"+id);
+                    if(!scheduleTextView[x][y].getText().equals(""))
+                    {
+                        viewCount=Integer.parseInt(scheduleTextView[x][y].getText().toString());
+                        viewCount++;
+                    }
+                    /* setText and colorChange */
+                    (scheduleTextView[x][y]).setText(viewCount+"");
+
+                    switch (viewCount){
+                        case 1 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#FAEBFF"));break;
+                        case 2 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#E8D9FF"));break;
+                        case 3 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#D1B2FF"));break;
+                        case 4 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#BFA0ED"));break;
+                        case 5 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#AD8EDB"));break;
+                        case 6 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#A566FF"));break;
+                        case 7 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#8041D9"));break;
+                        default : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#2A0066"));break;
+                    }
+                    viewCount = 1;
+                }
+            }
+            catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public ArrayList<String> getTvUser(){
+        return tvUser;
     }
 
     /* 시간표에서 시간을 선택했을때 x,y 좌표를 받아옴 */
@@ -142,6 +199,19 @@ public class ScheduleMatrix {
                 return false;
             }
         }
+
+        public boolean overlapCombineSchedule(int i, int j){
+            ServerService serverService = new ServerService(mContext);
+            //DB에 존재하는지 검사
+            requestResult = serverService.selectScheduleTitle(id, i+"", j+"");
+            if(requestResult.getResultCode() != 200){   //스케쥴이 존재안함
+                return true;
+            }
+            else {                                      //스케쥴 존재함.
+                return false;
+            }
+        }
+
 
     /* 삭제리스너 헬퍼 */
     public void removeClickHelper(View view){

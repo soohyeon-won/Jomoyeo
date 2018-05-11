@@ -27,4 +27,15 @@
         <item name="android:windowSoftInputMode">stateUnspecified|adjustUnspecified</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
+
+    <style name="popupButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#ffe8d9ff</item>
+        <item name="colorButtonNormal">#ffA091B7</item>
+    </style>
+
+    <style name="mainButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#FFAD8EDB</item>
+        <item name="colorButtonNormal">#ffffffff</item>
+    </style>
+
 </resources>

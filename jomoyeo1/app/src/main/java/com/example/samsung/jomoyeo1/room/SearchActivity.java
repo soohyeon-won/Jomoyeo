@@ -74,7 +74,6 @@ public class SearchActivity extends Activity implements AbsListView.OnScrollList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        //BoardActivity에서 받아온 것.
         listView = (ListView)findViewById(R.id.listView);
         list_itemArrayList = new ArrayList<List_item>();
 
@@ -147,7 +146,7 @@ public class SearchActivity extends Activity implements AbsListView.OnScrollList
                     //누른 listView의 position을 put함
                     intent.putExtra("id", list_itemArrayList.get(position).getId());
                     intent.putExtra("room_name", list_itemArrayList.get(position).getRoom_name());
-
+                    intent.putExtra("back", "SearchActivity");
                     startActivity(intent);  //roomViewActivity로 이동.
                     finish();
                 }
@@ -164,7 +163,7 @@ public class SearchActivity extends Activity implements AbsListView.OnScrollList
         setPopupSize(mDialog);
 
         // Back키 눌렀을 경우 Dialog Cancle 여부 설정
-        mDialog.getWindow().setGravity(Gravity.BOTTOM);                                     //Dialog 위치 이동
+        mDialog.getWindow().setGravity(Gravity.CENTER);                                     //Dialog 위치 이동
         final int pos = position;
         final EditText popPasswordTextView = (EditText)innerView.findViewById(R.id.popPasswordTextView);
         /* 팝업창에서 참여 버튼을 눌렀을 때 */
@@ -178,13 +177,14 @@ public class SearchActivity extends Activity implements AbsListView.OnScrollList
                     if(pass==true){
                         //attend list에 추가.
                         ServerService insertAttendList = new ServerService(mContext);
-                        requestResult = insertAttendList.insertAttendUser(list_itemArrayList.get(pos).getRoom_name(), UserPreference.getInstance().getId(mContext), "0");
+                        requestResult = insertAttendList.insertAttendUser(list_itemArrayList.get(pos).getRoom_name(), UserPreference.getInstance().getId(mContext), "0", list_itemArrayList.get(pos).getId());
 
                         dismissDialog();
                         Intent intent = new Intent(mContext, RoomViewActivity.class);
                         //누른 listView의 position을 put함
                         intent.putExtra("id", list_itemArrayList.get(pos).getId());
                         intent.putExtra("room_name", list_itemArrayList.get(pos).getRoom_name());
+                        intent.putExtra("back", "SearchActivity");
                         startActivity(intent);
                         finish();
                     }
@@ -308,6 +308,12 @@ public class SearchActivity extends Activity implements AbsListView.OnScrollList
         lastItemVisibleFlag = (totalItemCount > 0) && (firstVisibleItem + visibleItemCount >= totalItemCount);
     }
 
+    public void createRoomButtonListener(View view){
+        Intent createIntent = new Intent(mContext, CreationActivity.class);
+        createIntent.putExtra("backIntent", "SearchActivity");
+        startActivity(createIntent);
+        finish();
+    }
 
     /* back 버튼 눌렀을 때 이전화면(메인)으로 돌아가기 */
     @Override public void onBackPressed() {

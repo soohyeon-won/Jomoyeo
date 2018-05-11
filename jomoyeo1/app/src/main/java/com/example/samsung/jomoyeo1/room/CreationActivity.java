@@ -31,11 +31,14 @@ public class CreationActivity extends Activity {
     String roomPwd;
     String id;
     HttpRequestResult requestResult;
+    String backActivity;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_creation);
 
+        Intent intent = getIntent();
+        backActivity = intent.getStringExtra("backIntent");   //이전 액티비티
         roomNameEditText = (EditText)findViewById(R.id.roomNameEditText);
         roomPwdEditText = (EditText)findViewById(R.id.roomPwdEditText);
         createButton = (Button)findViewById(R.id.createButton);
@@ -73,7 +76,7 @@ public class CreationActivity extends Activity {
                         //방을 생성한다.
                         if (requestResult.getResultCode() == 200) {
                             ServerService insertUser = new ServerService(mContext);
-                            requestResult = insertUser.insertAttendUser(roomName, id, "1");  //master는 1로 저장.
+                            requestResult = insertUser.insertAttendUser(roomName, id, "1", id);  //master는 1로 저장.
                             Toast.makeText(mContext, "방 생성", Toast.LENGTH_LONG);
                             Intent Intent = new Intent(mContext, SearchActivity.class);
                             startActivity(Intent);
@@ -87,8 +90,21 @@ public class CreationActivity extends Activity {
 
     /* back 버튼 눌렀을 때 이전화면(메인)으로 돌아가기 */
     @Override public void onBackPressed() {
-        Intent backIntent = new Intent(mContext, MainActivity.class);
-        startActivity(backIntent);
-        finish();
+
+        if(backActivity.equals("MainActivity")) {
+            Intent backIntent = new Intent(mContext, MainActivity.class);
+            startActivity(backIntent);
+            finish();
+        }
+        else if(backActivity.equals("SearchActivity")){
+            Intent backIntent = new Intent(mContext, SearchActivity.class);
+            startActivity(backIntent);
+            finish();
+        }
+        else{
+            Intent backIntent = new Intent(mContext, AttendActivity.class);
+            startActivity(backIntent);
+            finish();
+        }
     }
 }

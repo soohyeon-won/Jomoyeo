@@ -40,25 +40,26 @@
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:background="#FFFFFF"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/popBackButton"
-                android:layout_width="145dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/dayofweek"
                 android:text="취소"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:theme="@style/popupButton" />
 
             <Button
                 android:id="@+id/popAttendButton"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/dayofweek"
                 android:text="참여"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:theme="@style/popupButton" />
         </LinearLayout>
 
     </LinearLayout>

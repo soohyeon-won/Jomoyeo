@@ -22,11 +22,9 @@ public class JoinActivity extends Activity {
 
     EditText idEditText;
     EditText pwdEditText;
-    EditText addrEditText;
-    EditText telEditText;
 
     Context context = this;
-    String id, pwd, addr, tel;
+    String id, pwd;
     HttpRequestResult requestResult;
 
     String checkId;
@@ -39,27 +37,23 @@ public class JoinActivity extends Activity {
 
         idEditText = (EditText)(findViewById(R.id.idEditText));
         pwdEditText = (EditText)(findViewById(R.id.pwdEditText));
-        addrEditText = (EditText)(findViewById(R.id.addrEditText));
-        telEditText = (EditText)(findViewById(R.id.telEditText));
     }
 
     //회원 가입 메소드
     public void onClick(View view){
         id = idEditText.getText().toString();
         pwd = pwdEditText.getText().toString();
-        addr = addrEditText.getText().toString();
-        tel = telEditText.getText().toString();
         if(!checkId.equals(id)){
             idCheckFlag = false;
             Toast.makeText(context, "id 중복확인을 완료해주세요.", Toast.LENGTH_SHORT).show();
 
         }
-        else if(id.equals("")||pwd.equals("")||addr.equals("")||tel.equals("")){
+        else if(id.equals("")||pwd.equals("")){
             Toast.makeText(context, "모든 정보를 입력해주세요!", Toast.LENGTH_SHORT).show();
         }
-        else if(!(id.equals("")&&pwd.equals("")&&addr.equals("")&&tel.equals(""))&&idCheckFlag ){
+        else if(!(id.equals("")&&pwd.equals(""))&&idCheckFlag ){
             ServerService serverService = new ServerService(context);
-            requestResult = serverService.joinMemberInfo(id, pwd, addr, tel);
+            requestResult = serverService.joinMemberInfo(id, pwd);
 
             if (requestResult.getResultCode() == 200) {
                 Toast.makeText(context, "회원가입 성공!", Toast.LENGTH_SHORT).show();

@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/back"
     tools:context="com.example.samsung.jomoyeo1.login.JoinActivity">
 
     <LinearLayout
@@ -58,16 +57,16 @@
                     android:hint="Id"
                     android:inputType="textPersonName"
                     android:paddingStart="20dp"
+                    android:textColorHint="#FFFFFFFF"
                     android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/duplicateChechButton"
                     android:layout_width="60dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/draw_btn"
+                    android:layout_height="60dp"
                     android:onClick="checkDuplicate"
-                    android:text="중복\n확인" />
+                    android:text="중복\n확인"
+                    android:theme="@style/mainButton" />
 
             </LinearLayout>
 
@@ -81,46 +80,23 @@
                     android:id="@+id/pwdEditText"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
-                    android:layout_marginBottom="7dp"
+                    android:layout_marginBottom="4dp"
                     android:layout_weight="1"
                     android:background="@drawable/edit"
                     android:ems="10"
                     android:hint="Password"
                     android:inputType="textPersonName"
-                    android:paddingStart="20dp" />
-
-                <EditText
-                    android:id="@+id/telEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="7dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edit"
-                    android:ems="10"
-                    android:hint="Tel"
-                    android:inputType="textPersonName"
-                    android:paddingStart="20dp" />
-
-                <EditText
-                    android:id="@+id/addrEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="7dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edit"
-                    android:ems="10"
-                    android:hint="Address"
-                    android:inputType="textPersonName"
-                    android:paddingStart="20dp" />
+                    android:paddingStart="20dp"
+                    android:textColorHint="#FFFFFFFF" />
 
                 <Button
                     android:id="@+id/joinButton"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:layout_weight="1"
-                    android:background="@drawable/draw_btn"
                     android:onClick="onClick"
                     android:text="회원 가입"
+                    android:theme="@style/mainButton"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="200dp" />
 
