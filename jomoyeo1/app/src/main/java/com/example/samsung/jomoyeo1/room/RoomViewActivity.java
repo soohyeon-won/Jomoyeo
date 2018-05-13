@@ -39,6 +39,7 @@ public class RoomViewActivity  extends Activity{
     //정보를 저장하는 layout 변수
     TextView userCountView;
     TextView attendIdList;
+    TextView masterTextView;
 
 
     public void onCreate(Bundle savedInstanceState) {
@@ -51,9 +52,6 @@ public class RoomViewActivity  extends Activity{
         roomName = intent.getStringExtra("room_name");  //방제목
         backActivity = intent.getStringExtra("back");   //이전 액티비티
 
-        roomNameView = (TextView)findViewById(R.id.roomName);
-        roomNameView.setText(roomName);
-
         attendIdList = (TextView)findViewById(R.id.attendIdList);
 
         //방장일 경우에만 방 삭제 버튼 보여주기.
@@ -64,11 +62,14 @@ public class RoomViewActivity  extends Activity{
             findViewById(R.id.leaveRoomButton).setVisibility(View.GONE);
         }
         userCountView = (TextView)findViewById(R.id.userCountView);
+        masterTextView = (TextView)findViewById(R.id.masterTextView);
+        roomNameView = (TextView)findViewById(R.id.roomNameView);
         addRoomUser();
 
         /* UI에 참여자 명수와 목록을 띄운다. */
+        setRoomNameTextView();
+        setMasterTextView();
         setTextUserCount();
-        setTextAttendIdView();
     }
 
     /* 참여 인원 목록 받아오기 */
@@ -104,7 +105,17 @@ public class RoomViewActivity  extends Activity{
 
     /* 현재 몇 명이 방에 있는지 보여줌 */
     public void setTextUserCount(){
-        userCountView.setText(userCount+"명");
+        userCountView.setText("참여자 목록 "+"("+userCount+")");
+    }
+
+    /* master이름을 텍스트뷰에 띄워줌 */
+    public void setMasterTextView(){
+        masterTextView.setText(masterId);
+    }
+
+    /* room name을 텍스트뷰에 띄워줌 */
+    public void setRoomNameTextView(){
+        roomNameView.setText(roomName);
     }
 
     /* 현재 참여자 목록을 보여줌 */

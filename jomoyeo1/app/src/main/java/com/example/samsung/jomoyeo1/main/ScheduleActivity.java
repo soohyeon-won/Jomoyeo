@@ -6,6 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.speech.RecognitionListener;
+import android.speech.RecognizerIntent;
+import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -18,6 +21,8 @@ import android.widget.Toast;
 
 import com.example.samsung.jomoyeo1.R;
 import com.example.samsung.jomoyeo1.preference.UserPreference;
+
+import java.util.ArrayList;
 
 /*
  * 스케쥴을 등록하는 부분
@@ -33,9 +38,17 @@ public class ScheduleActivity extends Activity {
     private Button popupAddButton;  // 팝업창 추가
     private Button popAddButtonv2;
     private Button popupBackButton; // 뒤로 가기
+    private Button popAddSTTButton; // STT로 스케쥴 추가 버튼
     public String scheduleTitle;    // 제목
     public String scheduleContent;  // 내용
     ScheduleMatrix scheduleMatrix;   // 시간표
+
+    //TSS
+    Intent i;
+    SpeechRecognizer mRecognizer;
+    ArrayList<String> mResult;
+    String[] rs;
+    EditText title;
 
     boolean addDelete = true;
 
@@ -53,6 +66,14 @@ public class ScheduleActivity extends Activity {
         //textView 저장 되어 있는 배열 생성
         scheduleMatrix.makeScheduleArray();
         colorPalette = new ColorPalette();
+
+        i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        i.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getPackageName());
+        i.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ko-KR");
+
+        mRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
+        mRecognizer.setRecognitionListener(listener);
+        mRecognizer.startListening(i);
 
     }
 
@@ -91,12 +112,12 @@ public class ScheduleActivity extends Activity {
                                                    // Back키 눌렀을 경우 Dialog Cancle 여부 설정
         mDialog.getWindow().setGravity(Gravity.BOTTOM);                                     //Dialog 위치 이동
         mDialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);        // Dialog 생성시 배경화면 어둡게 하지 않기
+        title = (EditText) innerView.findViewById(R.id.scheduleTitle);
 
         /* 팝업창에서 추가 버튼을 눌렀을 때 */
         popupAddButton = (Button) innerView.findViewById(R.id.popAddButton);
         popupAddButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                EditText title = (EditText) innerView.findViewById(R.id.scheduleTitle);
                 scheduleTitle = String.valueOf(title.getText()).trim();
                 if (scheduleTitle.getBytes().length <= 0){           //비어있으면
                     Toast.makeText(getApplicationContext(), "제목을 입력해주세요.", Toast.LENGTH_LONG).show();
@@ -106,6 +127,19 @@ public class ScheduleActivity extends Activity {
                 dismissDialog();
                 addPopupWindow_v2();
             }
+            }
+        });
+
+        /* STT로 스케쥴 추가하는 버튼 */
+        popAddSTTButton = (Button)innerView.findViewById(R.id.popAddSTTButton);
+        popAddSTTButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                mRecognizer = SpeechRecognizer.createSpeechRecognizer(mContext);
+                mRecognizer.setRecognitionListener(listener);
+                mRecognizer.startListening(i);  //리스너 부르기.
+                title.getText();
+                Log.d("확인", title.getText().toString());
+//                title.setText(rs[0]);
             }
         });
 
@@ -119,6 +153,62 @@ public class ScheduleActivity extends Activity {
         });
         mDialog.show();
     }
+
+
+    private RecognitionListener listener = new RecognitionListener() {
+        @Override
+        public void onReadyForSpeech(Bundle params) {
+
+        }
+
+        @Override
+        public void onBeginningOfSpeech() {
+
+        }
+
+        @Override
+        public void onRmsChanged(float rmsdB) {
+
+        }
+
+        @Override
+        public void onBufferReceived(byte[] buffer) {
+
+        }
+
+        @Override
+        public void onEndOfSpeech() {
+
+        }
+
+        @Override
+        public void onError(int error) {
+
+        }
+
+        @Override
+        public void onResults(Bundle results) {
+            String key="";
+            Log.d("확인", "확인");
+            key = SpeechRecognizer.RESULTS_RECOGNITION;
+            mResult = results.getStringArrayList(key);
+            rs = new String[mResult.size()];
+            mResult.toArray(rs);
+            Log.d("확인", "확인");
+            Log.d("확인 rs[0]", rs[0]);
+            mRecognizer.startListening(i);
+        }
+
+        @Override
+        public void onPartialResults(Bundle partialResults) {
+
+        }
+
+        @Override
+        public void onEvent(int eventType, Bundle params) {
+
+        }
+    };
 
     /* 추가하기_v2 팝업 */
     private void addPopupWindow_v2() {
@@ -206,6 +296,7 @@ public class ScheduleActivity extends Activity {
         }
         return super.dispatchTouchEvent(ev);
     }
+
 
     /* 팝업 크기 설정 */
     private void setPopupSize(Dialog mDialog){

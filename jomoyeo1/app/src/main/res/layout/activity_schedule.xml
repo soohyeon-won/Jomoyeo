@@ -1365,12 +1365,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:theme="@style/popupButton"
                 android:gravity="center"
                 android:onClick="onClick"
-                android:text="삭제하기"
+                android:text="삭제"
                 android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:theme="@style/popupButton" />
 
         </LinearLayout>
     </LinearLayout>

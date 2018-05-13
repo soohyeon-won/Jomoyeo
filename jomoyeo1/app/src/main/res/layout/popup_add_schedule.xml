@@ -44,11 +44,11 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/popBackButton"
+                android:id="@+id/popAddSTTButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="취소"
+                android:text="음성 추가"
                 android:textColor="#FFFFFF"
                 android:theme="@style/popupButton" />
 
@@ -60,6 +60,16 @@
                 android:text="추가"
                 android:textColor="#FFFFFF"
                 android:theme="@style/popupButton" />
+
+            <Button
+                android:id="@+id/popBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="취소"
+                android:textColor="#FFFFFF"
+                android:theme="@style/popupButton" />
+
         </LinearLayout>
 
     </LinearLayout>

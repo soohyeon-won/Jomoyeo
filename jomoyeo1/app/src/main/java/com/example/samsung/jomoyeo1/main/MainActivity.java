@@ -26,7 +26,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         backPressCloseHandler = new BackPressCloseHandler(this);
-
     }
 
     /* 각 창으로 이동하는 메소드. */
@@ -69,7 +68,7 @@ public class MainActivity extends Activity {
 //                Intent intent5 = new Intent(getApplicationContext(), LoginActivity.class); // 다음 넘어갈 클래스 지정
 //                startActivity(intent5); // 다음 화면으로 넘어간다
 //                finish();
-                Intent intent5 = new Intent(getApplicationContext(), STTTest.class); // 다음 넘어갈 클래스 지정
+                Intent intent5 = new Intent(getApplicationContext(), STTActivity.class); // 다음 넘어갈 클래스 지정
                 startActivity(intent5); // 다음 화면으로 넘어간다
                 finish();
                 break;
