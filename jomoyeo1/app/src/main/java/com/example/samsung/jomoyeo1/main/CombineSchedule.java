@@ -78,19 +78,17 @@ public class CombineSchedule extends Activity {
                             dismissDialog();
                             isOpenPopup = false;
                         }
-                        //누른 xy랑 tvUser의 x,y를 비교해야겠찌?ㅇㅇ 어케..?
                         for(int k = 0 ; k < tvUser.size(); k++) {
                             String a = tvUser.get(k);
                             String[] arr = a.split("#");
-                            Log.d("체크 a", a);
-                            Log.d("i와 j", i+","+j);
                             if(arr[0].equals(String.valueOf(i)) && arr[1].equals(String.valueOf(j))){
-                                Log.d("체크체",arr[2]);
-                                sb.append("\n"+arr[2]);
+                                sb.append(arr[2]);
+                                sb.append("\n");
                                 isOpenPopup = true;
                             }
                         }
-                            popupUserList(sb.toString());
+                        sb.deleteCharAt(sb.length()-1);
+                        popupUserList(sb.toString());
                     }
                     }
                 }
@@ -104,6 +102,7 @@ public class CombineSchedule extends Activity {
         mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         mDialog.setContentView(innerView);
         setPopupSize(mDialog);
+
         popupTvUserList = (TextView)innerView.findViewById(R.id.popupTvUserList);
         popupTvUserList.setText(a);
         mDialog.setCanceledOnTouchOutside(false);                                            // Dialog 밖을 터치 했을 경우 Dialog 사라지게 하기

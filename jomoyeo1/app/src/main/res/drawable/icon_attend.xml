@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="oval">
+        <solid android:color="#3e52a4"/>
+    </shape>
+</item>
+<item
+    android:drawable="@drawable/attend_room_icon"
+    android:bottom="100dp"
+    android:left="100dp"
+    android:right="100dp"
+    android:top="100dp" />
+</layer-list>

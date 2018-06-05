@@ -30,6 +30,8 @@ public class JoinActivity extends Activity {
     String checkId;
     boolean idCheckFlag=false;
 
+    Context mContext = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,5 +90,12 @@ public class JoinActivity extends Activity {
         else{
             Toast.makeText(context, "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    /* back 버튼 눌렀을 때 이전화면(로그인창)으로 돌아가기 */
+    @Override public void onBackPressed() {
+        Intent backIntent = new Intent(mContext, LoginActivity.class);
+        startActivity(backIntent);
+        finish();
     }
 }

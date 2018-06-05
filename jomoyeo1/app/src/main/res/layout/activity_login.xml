@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#896AB7"
+    android:background="#FFFFFF"
     tools:context="com.example.samsung.jomoyeo1.login.LoginActivity">
 
     <LinearLayout
@@ -31,7 +31,7 @@
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
                 android:text="Login"
-                android:textColor="#FFFFFF"
+                android:textColor="#5D5D5D"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -52,7 +52,7 @@
                     android:hint="Id"
                     android:inputType="textPersonName"
                     android:paddingStart="20dp"
-                    android:textColorHint="#FFFFFF" />
+                    android:textColorHint="#AAAAAAAF" />
 
             </LinearLayout>
 
@@ -74,7 +74,7 @@
                     android:hint="Password"
                     android:inputType="textPersonName"
                     android:paddingStart="20dp"
-                    android:textColorHint="#FFFFFF" />
+                    android:textColorHint="#AAAAAAAF" />
 
             </LinearLayout>
 
@@ -92,6 +92,7 @@
                     android:layout_weight="1"
                     android:onClick="click"
                     android:text="로그인"
+                    android:textColor="#5D5D5D"
                     android:theme="@style/mainButton" />
 
             </LinearLayout>
@@ -110,6 +111,7 @@
                     android:layout_weight="1"
                     android:onClick="click"
                     android:text="회원가입"
+                    android:textColor="#5D5D5D"
                     android:theme="@style/mainButton" />
             </LinearLayout>
 

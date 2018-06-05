@@ -132,14 +132,14 @@ public class ScheduleMatrix {
                     (scheduleTextView[x][y]).setText(viewCount+"");
 
                     switch (viewCount){
-                        case 1 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#FAEBFF"));break;
-                        case 2 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#E8D9FF"));break;
-                        case 3 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#D1B2FF"));break;
-                        case 4 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#BFA0ED"));break;
-                        case 5 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#AD8EDB"));break;
-                        case 6 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#A566FF"));break;
-                        case 7 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#8041D9"));break;
-                        default : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#2A0066"));break;
+                        case 1 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#6F4374D9"));break;
+                        case 2 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#8F4374D9"));break;
+                        case 3 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#AF4374D9"));break;
+                        case 4 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#CF4374D9"));break;
+                        case 5 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#DF4374D9"));break;
+                        case 6 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#FF4374D9"));break;
+                        case 7 : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#4374D9"));break;
+                        default : (scheduleTextView[x][y]).setBackgroundColor(Color.parseColor("#4374D9"));break;
                     }
                     viewCount = 1;
                 }

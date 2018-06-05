@@ -1,204 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/roomName"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:background="@drawable/dayofweek"
-        android:gravity="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:textAlignment="center">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/userCountView"
+            android:id="@+id/roomNameView"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/dayofweek"
+            android:gravity="center"
+            android:textColor="#BDBDBD"
+            android:textSize="24sp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/timeback"
-            android:paddingBottom="10dp"
-            android:paddingStart="15dp"
-            android:paddingTop="10dp"
-            android:text="참여자 목록 ( 0 )" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textAlignment="center">
 
-        <TextView
-            android:id="@+id/master"
+            <TextView
+                android:id="@+id/userCountView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/timeback"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:text="참여자 목록 ( 0 )"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/master"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/timeback"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="개설자"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/masterTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/userCountView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/timeback"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="참여자 목록"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/timeback"
-            android:paddingBottom="5dp"
-            android:paddingStart="15dp"
-            android:paddingTop="5dp"
-            android:text="개설자" />
-
-        <TextView
-            android:id="@+id/masterTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/timeback"
-            android:paddingBottom="5dp"
-            android:paddingStart="15dp"
-            android:paddingTop="5dp" />
-
-        <TextView
-            android:id="@+id/userCountView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/timeback"
-            android:paddingBottom="5dp"
-            android:paddingStart="15dp"
-            android:paddingTop="5dp"
-            android:text="참여자 목록" />
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/attendIdList"
                 android:layout_width="match_parent"
-                android:layout_height="100dp" />
-    </ScrollView>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:orientation="vertical">
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit"
+                android:padding="10dp" />
+        </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:gravity="bottom"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="195dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="10dp"
+            <Button
+                android:id="@+id/combineScheduleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:onClick="combineScheduleButtonListener"
+                android:text="합치기"
+                android:theme="@style/popupButton" />
 
-                <Button
-                    android:id="@+id/imageButton"
-                    android:layout_width="80dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/icon_combine_schedule" />
-
-                <Button
-                    android:id="@+id/combineScheduleButton"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/attend_room_icon"
-                    android:gravity="center"
-                    android:onClick="combineScheduleButtonListener"
-                    android:text="합치기"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
+            <Button
+                android:id="@+id/freshButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:onClick="freshButtonListener"
+                android:text="새로고침"
+                android:theme="@style/popupButton" />
 
-                <Button
-                    android:id="@+id/freshButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/icon_combine_schedule" />
-
-                <Button
-                    android:id="@+id/freshButton2"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/attend_room_icon"
-                    android:gravity="center"
-                    android:onClick="combineScheduleButtonListener"
-                    android:text="합치기"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="195dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="5dp"
+            <Button
+                android:id="@+id/leaveRoomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:onClick="leaveRoomUser"
+                android:text="방탈퇴"
+                android:theme="@style/popupButton" />
 
-                <Button
-                    android:id="@+id/freshButton3"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/icon_combine_schedule" />
-
-                <Button
-                    android:id="@+id/freshButton4"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/attend_room_icon"
-                    android:gravity="center"
-                    android:onClick="combineScheduleButtonListener"
-                    android:text="합치기"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
+            <Button
+                android:id="@+id/deleteRoomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/freshButton5"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/icon_combine_schedule" />
-
-                <Button
-                    android:id="@+id/freshButton6"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/attend_room_icon"
-                    android:gravity="center"
-                    android:onClick="combineScheduleButtonListener"
-                    android:text="합치기"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
+                android:onClick="leaveRoomUser"
+                android:text="방삭제"
+                android:theme="@style/popupButton" />
         </LinearLayout>
 
     </LinearLayout>
-</LinearLayout>
+
+</RelativeLayout>

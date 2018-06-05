@@ -59,7 +59,7 @@ public class SearchActivity extends Activity implements AbsListView.OnScrollList
     /* 페이징 */
     private ProgressBar progressBar;        //data로딩중을 표시할 프로그래스바
     private int page = 0;                           // 페이징변수. 초기 값은 0 이다.
-    private final int OFFSET = 5;                  // 한 페이지마다 로드할 데이터 갯수.
+    private final int OFFSET = 20;                  // 한 페이지마다 로드할 데이터 갯수.
     private boolean lastItemVisibleFlag = false;    // 리스트 스크롤이 마지막 셀(맨 바닥)로 이동했는지 체크할 변수
     private boolean mLockListView = false;// 데이터 불러올때 중복안되게 하기위한 변수
 

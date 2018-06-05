@@ -57,6 +57,7 @@ public class LoginActivity extends Activity {
             case R.id.joinButton :
                 Intent goJoin = new Intent(context, JoinActivity.class);
                 startActivity(goJoin);
+                finish();
                 break;
 
             case R.id.loginButton :

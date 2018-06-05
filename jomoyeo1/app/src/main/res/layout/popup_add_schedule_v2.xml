@@ -45,7 +45,7 @@
                 android:background="@drawable/dayofweek"
                 android:gravity="center"
                 android:text="추가"
-                android:textColor="#FFFFFF" />
+                android:textColor="#5D5D5D" />
 
             <Button
                 android:id="@+id/popBackButton"
@@ -55,7 +55,7 @@
                 android:background="@drawable/dayofweek"
                 android:gravity="center"
                 android:text="취소"
-                android:textColor="#FFFFFF" />
+                android:textColor="#5D5D5D" />
 
         </LinearLayout>
 

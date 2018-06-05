@@ -1,193 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#896AB7"
-    android:gravity="center"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="sans-serif"
-        android:gravity="center"
-        android:text="JOMOYEO"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="50dp" />
+    android:layout_gravity="center"
+    android:background="#FFFFFFFF"
+    android:gravity="center">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/scheduleRegistration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/card_back"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:onClick="goRoom"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:textAlignment="center">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/attendRoom"
-                    android:layout_width="80dp"
+                <ImageView
+                    android:layout_width="35dp"
                     android:layout_height="70dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/attend_room_icon"
-                    android:gravity="center"
-                    android:onClick="goRoom" />
+                    android:src="@drawable/icon_schedule_add" />
 
                 <TextView
-                    android:id="@+id/attv"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="schedule"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="   #C0C0C0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="스케쥴 추가"
+                android:textAlignment="textEnd"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attendRoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/card_back"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:onClick="goRoom"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_attend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="Attend"
                     android:textAlignment="center"
-                    android:textColor="#ffffff" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:textAlignment="center">
+                android:layout_height="1dp"
+                android:background="   #C0C0C0" />
 
-                <Button
-                    android:id="@+id/listRoom"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/room_icon"
-                    android:gravity="center"
-                    android:onClick="goRoom" />
-
-                <TextView
-                    android:id="@+id/rtv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingStart="10dp"
-                    android:text="Room"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:textAlignment="center">
-
-                <Button
-                    android:id="@+id/creationRoom"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/create_room_icon"
-                    android:gravity="center"
-                    android:onClick="goRoom" />
-
-                <TextView
-                    android:id="@+id/ctv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Create"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff" />
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="참가한 방"
+                android:textAlignment="textEnd"
+                android:textSize="10sp" />
 
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="5dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:textAlignment="center">
-
-                <Button
-                    android:id="@+id/scheduleRegistration"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/schedule_add_icon"
-                    android:gravity="center"
-                    android:onClick="goRoom" />
-
-                <TextView
-                    android:id="@+id/stv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingEnd="20dp"
-                    android:text="Schedule"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff" />
-            </LinearLayout>
+            android:id="@+id/listRoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/card_back"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:onClick="goRoom"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:textAlignment="center">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/logoutButton"
-                    android:layout_width="80dp"
+                <ImageView
+                    android:layout_width="35dp"
                     android:layout_height="70dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/logout_icon"
-                    android:gravity="center"
-                    android:onClick="goRoom" />
+                    android:src="@drawable/icon_room" />
 
                 <TextView
-                    android:id="@+id/logout"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:text="logout"
+                    android:gravity="center"
+                    android:text="Room"
                     android:textAlignment="center"
-                    android:textColor="#ffffff" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="   #C0C0C0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="방 목록"
+                android:textAlignment="textEnd"
+                android:textSize="10sp" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/card_back"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:onClick="goRoom"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="   #C0C0C0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="로그 아웃"
+                android:textAlignment="textEnd"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

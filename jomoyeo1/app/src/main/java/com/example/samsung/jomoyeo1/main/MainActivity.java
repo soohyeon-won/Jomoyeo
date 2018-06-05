@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.samsung.jomoyeo1.R;
+import com.example.samsung.jomoyeo1.login.LoginActivity;
+import com.example.samsung.jomoyeo1.preference.UserPreference;
 import com.example.samsung.jomoyeo1.room.AttendActivity;
-import com.example.samsung.jomoyeo1.room.CreationActivity;
 import com.example.samsung.jomoyeo1.room.SearchActivity;
 /*
  * 로그인 후 이동하는 메인 화면
@@ -53,26 +55,21 @@ public class MainActivity extends Activity {
                 finish();
                 break;
 
-            /* 방 생성으로 이동 */
-            case R.id.creationRoom:
-                Intent intent4 = new Intent(context, CreationActivity.class); // 다음 넘어갈 클래스 지정
-                intent4.putExtra("backIntent", "MainActivity");
-                startActivity(intent4); // 다음 화면으로 넘어간다
-                finish();
-                break;
+//            /* 방 생성으로 이동 */
+//            case R.id.creationRoom:
+//                Intent intent4 = new Intent(context, CreationActivity.class); // 다음 넘어갈 클래스 지정
+//                intent4.putExtra("backIntent", "MainActivity");
+//                startActivity(intent4); // 다음 화면으로 넘어간다
+//                finish();
+//                break;
 
             /* logout 버튼 */
             case R.id.logoutButton:
-//                UserPreference.getInstance().setId(context, "-1");
-//                Log.d("logout", "로그아웃?"+UserPreference.getInstance().getId(context));
-//                Intent intent5 = new Intent(getApplicationContext(), LoginActivity.class); // 다음 넘어갈 클래스 지정
-//                startActivity(intent5); // 다음 화면으로 넘어간다
-//                finish();
-                Intent intent5 = new Intent(getApplicationContext(), STTActivity.class); // 다음 넘어갈 클래스 지정
+                UserPreference.getInstance().setId(context, "-1");
+                Log.d("logout", "로그아웃?"+UserPreference.getInstance().getId(context));
+                Intent intent5 = new Intent(getApplicationContext(), LoginActivity.class); // 다음 넘어갈 클래스 지정
                 startActivity(intent5); // 다음 화면으로 넘어간다
                 finish();
-                break;
-
         }
     }
 

@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorString">#F5F5DC</color>
+    <color name="cardViewBack">#00FFFFC6</color>
+
+
 </resources>

@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class ServerService {
     private String log = "Log - "+this.getClass().getSimpleName()+"";
-    private final String basicDomain ="http://192.168.0.107:8080";
+    private final String basicDomain ="http://192.168.0.103:8080";
     public Context mContext;
 
     public ServerService(Context context) {
@@ -221,7 +221,7 @@ public HttpRequestResult deleteAttendUser(String room_name, String attend_id){
 
     /* 스케쥴 불러오기 */
     public HttpRequestResult selectSchedule(String id){
-            HttpRequestResult requestResult = null;
+        HttpRequestResult requestResult = null;
         HashMap<String,String> basic = new HashMap<>();
         HashMap<String,String> params = new HashMap<>();
 

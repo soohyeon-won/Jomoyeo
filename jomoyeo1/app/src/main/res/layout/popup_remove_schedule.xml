@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/dayofweek"
                 android:text="완료"
-                android:textColor="#FFFFFF" />
+                android:textColor="#5D5D5D" />
 
         </LinearLayout>
 

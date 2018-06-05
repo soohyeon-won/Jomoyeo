@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#896AB7"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <LinearLayout
@@ -29,7 +29,7 @@
             android:layout_weight="1"
             android:onClick="createRoomButtonListener"
             android:text="생성"
-            android:textColor="#000000"
+            android:textColor="#5D5D5D"
             android:theme="@style/mainButton" />
     </LinearLayout>
 
@@ -51,8 +51,7 @@
             android:id="@+id/progressbar"
             style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/dayofweek" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

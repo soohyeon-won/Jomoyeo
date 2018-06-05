@@ -6,9 +6,6 @@
         android 6.0 이상/이하 permission 주는 방법이 달라졌다. -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- STT를 사용하기 위한 permission -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-
     <uses-sdk android:minSdkVersion="8"></uses-sdk>
 
     <application
@@ -26,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".dbconnection.SplashActivity"></activity>
         <activity android:name=".login.JoinActivity"></activity>
         <activity android:name=".main.MainActivity"></activity>
@@ -35,7 +33,6 @@
         <activity android:name=".room.SearchActivity"></activity>
         <activity android:name=".main.ScheduleActivity"> </activity>
         <activity android:name=".room.RoomViewActivity"> </activity>
-        <activity android:name=".main.STTActivity"> </activity>
 
         <meta-data
             android:name="preloaded_fonts"

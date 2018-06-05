@@ -70,6 +70,7 @@ public class RoomViewActivity  extends Activity{
         setRoomNameTextView();
         setMasterTextView();
         setTextUserCount();
+        setTextAttendIdView();
     }
 
     /* 참여 인원 목록 받아오기 */
@@ -96,6 +97,7 @@ public class RoomViewActivity  extends Activity{
             try {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 al.add(jsonObject.getString("attend_id"));
+                Log.d("출력al", al.toString());
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -124,6 +126,7 @@ public class RoomViewActivity  extends Activity{
         for(int i = 0; i< al.size(); i++) {
             sb.append(al.get(i)+"\n");
         }
+        sb.deleteCharAt(sb.length()-1);
         attendIdList.setText(sb.toString());
         return sb.toString();
     }
